@@ -3,6 +3,9 @@ Package.describe({
 });
 
 Package.on_use(function (api, where) {
+  api.use('reactive-forms');
+  api.imply('reactive-forms');
+  
   api.add_files('reactive-forms-templates.js', ['client', 'server']);
 });
 
