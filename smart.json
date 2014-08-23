@@ -1,0 +1,9 @@
+{
+  "name": "reactive-forms-templates",
+  "description": "Form auto-layout templates with reactive content and validation.",
+  "homepage": "",
+  "author": "Joshua Ohlman <codewriterohs@gmail.com>",
+  "version": "0.0.1",
+  "git": "",
+  "packages": {}
+}
