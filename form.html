@@ -1,0 +1,34 @@
+<template name="form">
+	{{#reactiveForm .}}
+		{{#unless get 'options' 'skip-generate'}}
+			{{#formsFormWrapper}}
+				{{#each withFields}}
+					{{> formsField}}
+				{{/each}}
+
+				{{#if UI.contentBlock}}
+					{{> UI.contentBlock this}}
+				{{/if}}
+
+				<div class="form-group">
+					<div class="col-sm-12">
+						<div class="pull-right">
+							{{#each withButtons}}
+								<!-- Form button -->
+								<input
+									enabled="{{get 'button' 'enabled'}}"
+									type="{{get 'button' 'type'}}"
+									name="{{get 'button' 'name'}}"
+									value="{{get 'button' 'label'}}"
+									class="btn {{get 'button' 'class'}}"
+									>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+			{{/formsFormWrapper}}
+		{{else}}
+			{{> UI.contentBlock this}}
+		{{/unless}}
+	{{/reactiveForm}}
+</template>
