@@ -22,6 +22,11 @@ Package.on_use(function (api, where) {
 
   api.add_files('forms-input.js', ['client']);
   api.add_files('forms-input-input.html', ['client']);
+  api.add_files('forms-input-select.html', ['client']);
+  api.add_files('forms-input-select.js', ['client']);
+  api.add_files('forms-input-checkbox.html', ['client']);
+  api.add_files('forms-input-filepicker.html', ['client']);
+  api.add_files('forms-input-filepicker.js', ['client']);
 
   api.add_files('forms-no-op.html', ['client']);
 });

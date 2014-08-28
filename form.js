@@ -2,6 +2,8 @@ Forms.helpers.field = {
 	// Default field settings
 	type: "text"
 	, fieldWrapperTemplate: 'formsFieldWrapperDefault'
+	, filepickerButtonText: 'Upload'
+	, filepickerAllowMultiple: false
 };
 
 Forms.helpers.options = {

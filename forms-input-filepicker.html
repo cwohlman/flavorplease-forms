@@ -1,0 +1,34 @@
+<template name="formsInputFilePicker">
+	<div class="row">
+		{{#if get fieldName}}
+			<div class="col-sm-6">
+				<img src="{{get fieldName}}" class="img-thumbnail img-responsive">
+				{{#if dirty fieldName}}
+					<span>Image uploaded and ready to be saved.</span>
+				{{/if}}
+			</div>
+		{{else}}
+			{{#if get 'field' 'placeholderImage'}}
+				<div class="col-sm-6">
+					<img src="{{get 'field' 'placeholderImage'}}" class="img-thumbnail img-responsive">
+				</div>
+			{{/if}}
+		{{/if}}
+		<div class="col-sm-6">
+			<input
+			type="filepicker"
+			name="{{get 'field' 'name'}}"
+			data-fp-button-class="btn btn-primary btn-photopicker"
+			data-fp-button-text="{{get 'field' 'filepickerButtonText'}}"
+			data-fp-drag-text="Or drop photo here"
+			data-fp-drag-class="pane-photopicker"
+			data-fp-extensions=".png,.jpeg,.jpg,.JPG,.PNG,.JPEG"
+			data-fp-container="modal" 
+			data-fp-multiple="{{get 'field' 'filepickerAllowMultiple'}}"
+			data-fp-store-location="S3"
+			data-fp-store-path="{{get 'field' 'uploaddir'}}"
+			data-fp-store-access="public"
+			>
+		</div>
+	</div>
+</template>
