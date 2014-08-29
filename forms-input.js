@@ -1,6 +1,7 @@
 var fieldTypeTemplateMap = {
 	options: 'formsInputSelect'
 	, select: 'formsInputSelect'
+	, selectize: 'formsInputSelectize'
 	, file: 'formsInputFilePicker'
 	, checkbox: 'formsInputCheckbox'
 	, boolean: 'formsInputCheckbox'

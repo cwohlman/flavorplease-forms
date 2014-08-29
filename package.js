@@ -7,10 +7,20 @@ Package.on_use(function (api, where) {
   api.use('templating');
   api.use('reactive-dict');
   api.use('underscore');
+  api.use('less');
 
   api.use('reactive-forms');
   api.imply('reactive-forms');
   
+  api.add_files('vendor/selectize.js', ['client']);
+
+  api.add_files('vendor/plugins/drag_drop.import.less', ['client']);
+  api.add_files('vendor/plugins/dropdown_header.import.less', ['client']);
+  api.add_files('vendor/plugins/optgroup_columns.import.less', ['client']);
+  api.add_files('vendor/plugins/remove_button.import.less', ['client']);
+  api.add_files('vendor/selectize.lessimport', ['client']);
+  api.add_files('vendor/selectize.bootstrap3.lessimport', ['client']);
+
   api.add_files('form.html', ['client']);
   api.add_files('form.js', ['client']);
   api.add_files('forms-form-wrapper.js', ['client']);
@@ -24,6 +34,8 @@ Package.on_use(function (api, where) {
   api.add_files('forms-input-input.html', ['client']);
   api.add_files('forms-input-select.html', ['client']);
   api.add_files('forms-input-select.js', ['client']);
+  api.add_files('forms-input-selectize.html', ['client']);
+  api.add_files('forms-input-selectize.js', ['client']);
   api.add_files('forms-input-checkbox.html', ['client']);
   api.add_files('forms-input-filepicker.html', ['client']);
   api.add_files('forms-input-filepicker.js', ['client']);
