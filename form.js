@@ -15,6 +15,8 @@ Forms.helpers.field = {
 
 Forms.helpers.options = {
 	formWrapperTemplate: 'formsFormWrapperDefault'
+	, fieldsWrapperTemplate: 'formsFieldsWrapperDefault'
+	, buttonsWrapperTemplate: 'formsButtonsWrapperDefault'
 };
 
 Forms.helpers.button = {

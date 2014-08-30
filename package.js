@@ -26,12 +26,22 @@ Package.on_use(function (api, where) {
   api.add_files('forms-form-wrapper.js', ['client']);
   api.add_files('forms-form-wrapper-default.html', ['client']);
 
+  api.add_files('forms-fields.html', ['client']);
+  api.add_files('forms-fields-wrapper.js', ['client']);
+  api.add_files('forms-fields-wrapper-default.html', ['client']);
+
+  api.add_files('forms-buttons.html', ['client']);
+  api.add_files('forms-buttons-wrapper.js', ['client']);
+  api.add_files('forms-buttons-wrapper-default.html', ['client']);
+
   api.add_files('forms-field.html', ['client']);
   api.add_files('forms-field-wrapper.js', ['client']);
   api.add_files('forms-field-wrapper-default.html', ['client']);
+  api.add_files('forms-field-wrapper-legend.html', ['client']);
 
   api.add_files('forms-input.js', ['client']);
   api.add_files('forms-input-input.html', ['client']);
+  api.add_files('forms-input-legend.html', ['client']);
   api.add_files('forms-input-select.html', ['client']);
   api.add_files('forms-input-select.js', ['client']);
   api.add_files('forms-input-selectize.html', ['client']);

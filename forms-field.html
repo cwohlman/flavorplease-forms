@@ -1,5 +1,9 @@
 <template name="formsField">
 	{{#formsFieldWrapper}}
-		{{> formsInput}}
+		{{#if UI.contentBlock}}
+			{{> UI.contentBlock}}
+		{{else}}
+			{{> formsInput}}
+		{{/if}}
 	{{/formsFieldWrapper}}
 </template>

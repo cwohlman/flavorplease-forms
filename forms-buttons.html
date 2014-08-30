@@ -1,0 +1,14 @@
+<template name="formsButtons">
+	{{#formsButtonsWrapper}}
+		{{#each withButtons}}
+			<!-- Form button -->
+			<input
+				enabled="{{get 'button' 'enabled'}}"
+				type="{{get 'button' 'type'}}"
+				name="{{get 'button' 'name'}}"
+				value="{{get 'button' 'label'}}"
+				class="btn {{get 'button' 'class'}}"
+				>
+		{{/each}}
+	{{/formsButtonsWrapper}}
+</template>

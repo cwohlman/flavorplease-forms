@@ -5,6 +5,7 @@ var fieldTypeTemplateMap = {
 	, file: 'formsInputFilePicker'
 	, checkbox: 'formsInputCheckbox'
 	, boolean: 'formsInputCheckbox'
+	, legend: 'formsInputLegend'
 };
 
 UI.registerHelper("formsInput", function () {

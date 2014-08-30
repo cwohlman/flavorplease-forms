@@ -1,0 +1,13 @@
+<template name="formsFieldWrapperLegend">
+	{{> UI.contentBlock}}
+	{{#each get 'errors' fieldName}}
+		<span class="help-block">
+			{{this}}
+		</span>
+	{{/each}}
+	{{#if get 'field' 'helpText'}}
+		<span class="help-block">
+			{{get 'field' 'helpText'}}
+		</span>
+	{{/if}}
+</template>
