@@ -52,9 +52,3 @@ Package.on_use(function (api, where) {
 
   api.add_files('forms-no-op.html', ['client']);
 });
-
-Package.on_test(function (api) {
-  api.use('reactive-forms-templates');
-
-  api.add_files('reactive-forms-templates_tests.js', ['client', 'server']);
-});
