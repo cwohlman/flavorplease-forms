@@ -6,6 +6,9 @@
   "version": "0.0.1",
   "git": "",
   "packages": {
-    "reactive-forms": {}
+    "reactive-forms": {
+      "git": "https://github.com/cwohlman/meteor-reactive-forms.git",
+      "tag": "v0.0.3"
+    }
   }
 }
