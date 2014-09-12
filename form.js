@@ -30,3 +30,8 @@ Forms.helpers.buttons = {
 		, 'class': 'btn-primary'
 	}
 };
+
+Forms.helpers.onInvalid = function  (errors) {
+	console.log("Errors in form", errors);
+	Notify.error("The form is invalid", _.flatten(errors)[0]);
+};
