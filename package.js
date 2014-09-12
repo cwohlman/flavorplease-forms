@@ -9,7 +9,7 @@ Package.on_use(function (api, where) {
   api.use('underscore');
   api.use('less');
 
-  api.use('reactive-forms');
+  api.use('reactive-forms', ['client', 'server']);
   api.imply('reactive-forms');
   
   api.add_files('vendor/selectize.js', ['client']);
@@ -20,6 +20,8 @@ Package.on_use(function (api, where) {
   api.add_files('vendor/plugins/remove_button.import.less', ['client']);
   api.add_files('vendor/selectize.lessimport', ['client']);
   api.add_files('vendor/selectize.bootstrap3.lessimport', ['client']);
+
+  api.add_files('vendor/label-better.js', ['client']);
 
   api.add_files('form.html', ['client']);
   api.add_files('form.js', ['client']);
@@ -37,6 +39,7 @@ Package.on_use(function (api, where) {
   api.add_files('forms-field.html', ['client']);
   api.add_files('forms-field-wrapper.js', ['client']);
   api.add_files('forms-field-wrapper-default.html', ['client']);
+  api.add_files('forms-field-wrapper-default.js', ['client']);
   api.add_files('forms-field-wrapper-legend.html', ['client']);
 
   api.add_files('forms-input.js', ['client']);

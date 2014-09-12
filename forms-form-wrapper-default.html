@@ -1,5 +1,9 @@
 <template name="formsFormWrapperDefault">
-	<form class="form-horizontal {{get 'options' 'formClass'}}">
+	<!--  
+		we use bootstrap's clearfix to extend the form below right-floated
+		submit buttons
+	-->
+	<form class="clearfix {{get 'options' 'formClass'}}">
 		{{> UI.contentBlock}}
 	</form>
 </template>

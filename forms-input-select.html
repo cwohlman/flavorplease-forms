@@ -1,6 +1,6 @@
 <template name="formsInputSelect">
 	<select name="{{get 'field' 'name'}}" class="form-control">
-		<option value=""></option>
+		<option selected disabled value="">{{get 'field' 'label'}}</option>
 		{{#each options}}
 			<option value="{{key}}" selected="{{selected ..}}">{{name}}</option>
 		{{/each}}
